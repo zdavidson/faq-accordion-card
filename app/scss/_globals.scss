@@ -1,0 +1,87 @@
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient($softViolet, $softBlue);
+    background-repeat: no-repeat;
+    font-size: $font-reg;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 0.67em 0;
+    color: $veryDarkDesaturatedBlue;
+
+    @include breakpoint-up(large) {
+        text-align: left;
+    }
+}
+
+p {
+    color: $veryDarkGrayishBlue;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+
+// Flexbox
+.flex {
+    display: flex;
+
+    &-js-sb {
+        justify-content: space-between;
+    }
+
+    &-js-c {
+        justify-content: center;
+    }
+    
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.pquestion:hover {
+
+    @include breakpoint-up(large) {
+        color: $softRed;
+    }
+}
+
+
+// Visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
