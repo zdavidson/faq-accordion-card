@@ -1,6 +1,7 @@
 html {
     font-family: 'Kumbh Sans', sans-serif;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     background-image: linear-gradient($softViolet, $softBlue);
     background-repeat: no-repeat;
     font-size: $font-reg;
+    
 }
 
 h1 {

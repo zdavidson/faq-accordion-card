@@ -78,6 +78,7 @@
             padding: 0;
             padding-bottom: 4.625rem;
             padding-right: 6rem;
+           
         }
     } 
 
@@ -92,6 +93,8 @@
 
         @include breakpoint-up(large) {
             width: 70%;
+            padding: 0;
+            width: 20rem;
         }
 
         p {
